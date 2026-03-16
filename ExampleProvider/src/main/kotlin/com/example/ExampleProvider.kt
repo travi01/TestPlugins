@@ -6,7 +6,7 @@ import com.lagardost.cloudstream3.SearchResponse
 import com.lagardost.cloudstream3.app
 import com.lagardost.cloudstream3.NewMovie.SearchResponse
 
-class LK21Provider : MainAPI() { 
+class ExampleProvider : MainAPI() { 
     override var mainUrl = "https://tv9.lk21official.cc"
     override var name = "LK21 Official"
     override val supportedTypes = setOf(TvType.Movie)
