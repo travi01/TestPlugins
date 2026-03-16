@@ -21,4 +21,3 @@ class LK21Provider : MainAPI() {
         }
     }
 }
-
