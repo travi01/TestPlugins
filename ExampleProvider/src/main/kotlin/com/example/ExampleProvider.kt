@@ -1,10 +1,6 @@
 package com.example
 
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.TvType
-import com.lagardost.cloudstream3.SearchResponse
-import com.lagardost.cloudstream3.app
-import com.lagardost.cloudstream3.NewMovie.SearchResponse
+import com.lagradost.cloudstream3.*
 
 class ExampleProvider : MainAPI() { 
     override var mainUrl = "https://tv9.lk21official.cc"
@@ -13,7 +9,7 @@ class ExampleProvider : MainAPI() {
 
     override suspend fun search(query: String): List<SearchResponse> {
         val link = "$mainUrl/?s=$query"
-        val document = app.get(link).deocument
+        val document = app.get(link).document
         return document.select("article.ui-grid-main").map {
             val title = it.selectFirst("h1.grid-title a")?.text() ?: ""
             val href = it.selectFirst("h1.grid-title a")?.attr("href") ?: ""
