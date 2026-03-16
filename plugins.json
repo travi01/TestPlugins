@@ -1,22 +1,13 @@
 [
     {
-        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Korduene_Logo.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://github.com/travi01/TestPlugins",
-        "fileSize": 9397,
-        "status": 1,
-        "language": "en",
-        "authors": [
-            "Cloudburst",
-            "Luna712"
-        ],
-        "tvTypes": [
-            "Movie"
-        ],
-        "version": 1,
+        "name": "LK21 Official",
         "internalName": "ExampleProvider",
-        "description": "Lorem ipsum",
-        "url": "https://raw.githubusercontent.com/travi01/TestPlugins/builds/ExampleProvider.cs3",
-        "name": "ExampleProvider"
+        "authors": ["travi01"],
+        "description": "Nonton Film LK21 Official",
+        "tvTypes": ["Movie"],
+        "language": "id",
+        "version": 1,
+        "url": "ExampleProvider.cs3",
+        "iconUrl": "https://upload.wikimedia.org/wikimedia/commons/2/2f/Korduene_Logo.png"
     }
 ]
